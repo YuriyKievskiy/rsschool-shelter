@@ -1,5 +1,5 @@
 
-/* ========================= RESET DEFOULT SETTINGS ==========================*/
+/* #region ========================= RESET DEFOULT SETTINGS ==========================*/
 
 html, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,9 +43,25 @@ table {
 	border-spacing: 0;
 }
 
-/* ================================== CSS ===================================*/
+body{
+    cursor: url("../files/cursore/Arrow.svg"), pointer;
+}
+
+/* ==================================== CURSOR =====================================*/
+
+.Button{
+    cursor: url("../files/cursore/ButtonHolder.svg"), pointer;
+}
+
+a{
+    cursor: url("../files/cursore/ButtonHolder.svg"), pointer;
+}
+/* #endregion */
+/* #region ================================== CSS ===================================*/
 
 body{
+    margin: 0;
+
     font-family: Arial;
     font-size: 15px;
     color: #FFF;
@@ -70,17 +86,35 @@ main{
      -webkit-linear-gradient(top left, #5b483a, #262425, #211F20);
 }
 
-/* ================================= HEADER =================================*/
+.Button:hover{
+    border-color: #FDDCC4;
+    background-color: #FDDCC4;
+    transition: all 0.5s ease;
+}
 
-.HeaderConteiner{
+.Button:disabled{
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    color: #CDCDCD;
+}
+
+.Button{
+    background: transparent;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 100px;
+    margin: 0;
+    user-select: none;
+    line-height: 1.5;
+    background-color:rgba(0, 0, 0, 0);
 
-    padding-top: 27px;
-    height: 60px;
-    width: 1200px;
+    font-family: Georgia;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #292929;
 }
 
 h1, h2, h3, h4, h5{
@@ -117,7 +151,19 @@ h5{
     font-size: 15px;
     color: #545454;
 }
+/* #endregion */
+/* #region ================================= HEADER =================================*/
 
+.HeaderConteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 27px;
+    height: 60px;
+    width: 1200px;
+}
 
 .Logo{
     display: flex;
@@ -134,6 +180,7 @@ h5{
     font-size: 13px;
     line-height: 75%;
     letter-spacing: 0.6px;
+    color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
 }
 
@@ -144,17 +191,26 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
+    gap: 0 36px;
 }
 
-nav ul li{
-    padding-left: 36px;
-}
-
-nav ul li a{
+.MenuLink{
     color: #CDCDCD;
+    line-height: 160%;
 }
 
-/* ============================= StartScreen =============================*/
+.MenuLinkActive{
+    color: #FAFAFA;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.MenuLink:hover{
+    color: #FAFAFA;
+    transition: all 0.5s ease;
+}
+/* #endregion */
+/* #region ============================= StartScreen =============================*/
 
 .NotOnly{
     height: 728px;
@@ -183,27 +239,14 @@ nav ul li a{
     line-height: 155%;
 }
 
-.Button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    margin: 0;
-
-    font-family: Georgia;
-    font-style: normal;
-    font-size: 17px;
-    letter-spacing: 1px;
-    color: #292929;
-}
-
 .ButtonPrimary{
     width: 207px;
     height: 52px;
+    border-color: #F1CDB3;
     background-color: #F1CDB3;
 }
-
-/* ================================= About =================================*/
+/* #endregion */
+/* #region ================================= About =================================*/
 
 .About{
     display: flex;
@@ -260,8 +303,8 @@ nav ul li a{
     line-height: 160%;
     color: #4C4C4C;
 }
-
-/* ================================= Pets =================================*/
+/* #endregion */
+/* #region ================================= Pets =================================*/
 
 .Pets{
     display: flex;
@@ -299,7 +342,6 @@ nav ul li a{
     letter-spacing: 2.1px
 }
 
-
 .Slider{
     display: flex;
     flex-direction: row;
@@ -317,6 +359,12 @@ nav ul li a{
     justify-content: space-around;
 
     width: 1080px;
+}
+
+.SliderControl{
+    height: 52px;
+    width: 52px;
+    border-color: #F1CDB3;
 }
 
 .Card{
@@ -347,8 +395,8 @@ nav ul li a{
     color: #292929;
     border-color: #F1CDB3;
 }
-
-/* ================================= Help =================================*/
+/* #endregion */
+/* #region ================================= Help =================================*/
 
 .Help{
     display: flex;
@@ -403,8 +451,8 @@ nav ul li a{
     align-items: center;
     justify-content: space-between;
 }
-
-/* =============================== Donation ===============================*/
+/* #endregion */
+/* #region =============================== Donation ===============================*/
 
 .Donation{
     display: flex;
@@ -445,15 +493,18 @@ nav ul li a{
     width: 300px;
 }
 .ButtonDonation{
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0 15px;
     width: 349px;
     height: 43px;
     border-radius: 10px;
+    padding-inline: 0;
+    border-color: #F1CDB3;
     background-color: #F1CDB3;
 }
 
 .ButtonDonation h4{
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
 }
 
 .DonationContentInformation p{
@@ -465,3 +516,72 @@ nav ul li a{
     font-size: 12px;
     color: #B2B2B2;
 }
+/* #endregion */
+/* #region ================================ Footer ================================*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-size: 100%;
+    height: 350px;
+    width: 100%;
+    background: url(../files/noise/noise_transparent@2x.png),
+     -webkit-linear-gradient(top left, #5b483a, #262425, #211F20);
+}
+
+.FooterContent{
+    height: 310px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.FooterContent h3{
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.FooterContntConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 234px;
+    padding-top: 17px;
+}
+
+.Contacts{
+    width: 278px;
+}
+
+.Location{
+    width: 302px;
+}
+
+.FooterItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 32px;
+    gap: 0 20px;
+}
+
+.FooterText{
+    letter-spacing: 1.2px;
+    color: #F1CDB3;
+}
+/* #endregion */

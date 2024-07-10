@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Shelter</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/MainStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,16 +11,16 @@
         <div class="StartScreen">
             <header>
                 <div class="HeaderConteiner">
-                    <section class="Logo">
+                    <a href="#!" class="Logo">
                         <h1 class="Title">Cozy House</h1>
                         <span>Shelter for pets in Boston</span>
-                    </section>
+                    </a>
                     <nav>
                         <ul>
-                            <li><a href="#About the shelter">About the shelter</a></li>
-                            <li><a href="#Our pets">Our pets</a></li>
-                            <li><a href="#Help the shelter">Help the shelter</a></li>
-                            <li><a href="#Contacts">Contacts</a></li>
+                            <li><a href="#About the shelter" class="MenuLinkActive MenuLink">About the shelter</a></li>
+                            <li><a href="#Our pets" class="MenuLink">Our pets</a></li>
+                            <li><a href="#Help the shelter" class="MenuLink">Help the shelter</a></li>
+                            <li><a href="#Contacts" class="MenuLink">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -29,7 +29,7 @@
                 <section class="Content">
                     <h2>Not only people need a house</h2>
                     <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <a href="#pets" class="Button ButtonPrimary">Make a friend</a>
+                    <button href="#pets" class="Button ButtonPrimary">Make a friend</button>
                 </section>
                 <section class="StartScreenPappy">
                     <img src="./files/Main/start-screen-puppy.png" alt="StartScreenPappy photo">
@@ -59,7 +59,7 @@
                     <h3>are looking for a house</h3>
                 </section>
                 <div class="Slider">
-                    <button class="SliderControl ControlNext">&#8592;</button>
+                    <button class="Button SliderControl">&#8592;</button>
                     <div class="Carousel">
 
                         <section class="Card">
@@ -81,7 +81,7 @@
                         </section>
                     
                     </div>
-                    <button class="SliderControl ControlNext">&#8594;</button>
+                    <button class="Button SliderControl">&#8594;</button>
                 </div>
                 <a href="#petsHTML" class="Button ButtonPrimary">Get to know the rest</a>
             </div>
@@ -152,12 +152,45 @@
                         <h3>You can also make a donation</h3>
                     </section>
                     <h5>Name of the bank / Type of bank account</h5>
-                    <a href="#Donate" class="Button ButtonDonation"><img src="./files/Main/credit-card.svg" alt="credit-card"><h4>8380 2880 8028 8791 7435</h4></a>
+                    <button href="#Donate" class="Button ButtonDonation"><img src="./files/Main/credit-card.svg" alt="credit-card"><h4>8380 2880 8028 8791 7435</h4></button>
                     <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="FooterConteiner">
+            <div class="FooterContent">
+                <div class="FooterContntConteiner Contacts">
+                    <h3>For questions and suggestions</h3>
+                    <section class="FooterItem">
+                        <a href="mailto:email@shelter.com"><img src="./files/Footer/mail.svg" alt="email"></a>
+                        <a href="mailto:email@shelter.com"><h4 class="FooterText">email@shelter.com</h4></a>
+                    </section>
+                    <section class="FooterItem">
+                        <a href="tell:+13 674 567 75 54"><img src="./files/Footer/phone.svg" alt="phone"></a>
+                        <a href="tell:+13 674 567 75 54"><h4 class="FooterText">+13 674 567 75 54</h4></a>
+                    </section>
+                </div>
+                
+                <div class="FooterContntConteiner Location">
+                    <h3>We are waiting for your visit</h3>
+                    <section class="FooterItem">
+                        <a href="https://maps.app.goo.gl/S2owouiafTdYY6ex5" target="_blank"><img src="./files/Footer/pin.svg" alt="pin"></a>
+                        <a href="https://maps.app.goo.gl/S2owouiafTdYY6ex5" target="_blank"><h4 class="FooterText">1 Central  Street, Boston (entrance from the store)</h4></a>
+                        
+                    </section>
+                    <section class="FooterItem">
+                        <a href="https://maps.app.goo.gl/23qCGkHb1wrKibjc8" target="_blank"><img src="./files/Footer/pin.svg" alt="pin"></a>
+                        <a href="https://maps.app.goo.gl/23qCGkHb1wrKibjc8" target="_blank"><h4 class="FooterText">18 South   Park, London </h4></a>
+                    </section>
+                </div>
+                <section class="FooterPappy">
+                    <img src="./files/Footer/footer-puppy.png" alt="puppy">
+                </section>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
