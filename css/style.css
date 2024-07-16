@@ -642,6 +642,8 @@ footer{
 }
 
 .MenuLinkOurPetsActive{
+    pointer-events: none;
+    
     color: #292929;
     padding-bottom: 6px;
     border-bottom: 3px solid #F1CDB3;
