@@ -1,0 +1,1166 @@
+
+/* #region ========================= RESET DEFOULT SETTINGS ==========================*/
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor: url("../files/cursore/Arrow.svg"), pointer;
+}
+
+/* ==================================== CURSOR =====================================*/
+
+.Button{
+    cursor: url("../files/cursore/ButtonHolder.svg"), pointer;
+}
+
+a{
+    cursor: url("../files/cursore/ButtonHolder.svg"), pointer;
+}
+/* #endregion */
+/* #region ================================== CSS ===================================*/
+
+body{
+    margin: 0;
+
+    font-family: Arial;
+    font-size: 15px;
+    color: #FFF;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.WidthContainer{
+    max-width: 1200px;
+}
+
+.Button:hover{
+    border-color: #FDDCC4;
+    background-color: #FDDCC4;
+    transition: all 0.5s ease;
+}
+
+.Button:disabled{
+    pointer-events: none;    
+    background-color: #FFF;
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+}
+
+.Button{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 100px;
+    margin: 0;
+    user-select: none;
+    line-height: 1.5;
+    background-color:rgba(0, 0, 0, 0);
+
+    font-family: Georgia;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #292929;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: Georgia;
+    font-style: normal;
+    line-height: 130%;
+}
+
+h1{
+    letter-spacing: 2px;
+    font-size: 32px;
+    color: #F1CDB3;
+}
+
+h2{
+    font-size: 44px;
+    color: #FFF;
+}
+
+
+h3{
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #545454;
+}
+
+h4{
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    color: #545454;
+}
+
+h5{
+    letter-spacing: 0.9px;
+    font-size: 15px;
+    color: #545454;
+}
+/* #endregion */
+/* #region ================================= Header =================================*/
+
+header{
+    height: 120px;
+    width: 100%;
+}
+
+.HeaderConteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+    width: 100%;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 61px;
+    margin: 0;
+}
+
+.Logo p{
+    margin: 0;
+    padding-left: 3px;
+    font-size: 13px;
+    line-height: 75%;
+    letter-spacing: 1.3px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
+}
+
+nav{
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0 36px;
+}
+
+.MenuLink{
+    color: #CDCDCD;
+    line-height: 160%;
+}
+
+.MenuLinkActive{
+    pointer-events: none;
+
+    color: #FAFAFA;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.MenuLink:hover{
+    color: #FAFAFA;
+    transition: all 0.5s ease;
+}
+
+.Burger{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.Burger span {
+    width: 30px;
+    height: 2px;
+    background-color: #F1CDB3;
+    margin: 4px auto;
+    display: block;
+}
+/* #endregion */
+/* #region ============================= StartScreen =============================*/
+.StartScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-size: 100%;
+    height: 908px;
+    width: 100%;
+    background: url(../files/noise/noise_transparent@2x.png),
+     linear-gradient(100deg, #5b483a, #262425, #211F20);
+}
+.NotOnly{
+    height: 728px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    gap: 0 42px;
+}
+
+.NotOnlyTitle{
+    display: flex;
+}
+
+.Content{
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px 0;
+}
+
+.Content h2{
+    padding-top: 163px;
+    padding-right: 50px;;
+}
+
+.Content p{
+    line-height: 155%;
+}
+
+.ButtonPrimary{
+    width: 207px;
+    height: 52px;
+    border-color: #F1CDB3;
+    background-color: #F1CDB3;
+}
+/* #endregion */
+/* #region ================================= About =================================*/
+
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-size: 100%;
+    height: 588px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.AboutPetsPhoto{
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    height: 425px;
+    max-width: 300px;
+}
+
+.AboutContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 425px;
+    gap: 0 10%;
+}
+
+.AboutContentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 430px;
+}
+
+.AboutContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 397px;
+    width: 100%;
+    gap: 24px 0;
+}
+
+.AboutContent h3{
+    padding-right: 25px;
+}
+
+.AboutContent p{
+    line-height: 160%;
+    color: #4C4C4C;
+}
+/* #endregion */
+/* #region ================================= Pets =================================*/
+
+.Pets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: 100%;
+    height: 877px;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.PetsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 697px;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.PetsContentHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 400px;
+}
+
+.PetsContentHeading h3{
+    letter-spacing: 2.1px
+}
+
+.Slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 435px;
+    width: 100%;
+}
+
+.Carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    max-width: 1080px;
+    width: 100%;
+}
+
+.SliderControl{
+    height: 52px;
+    width: 52px;
+    border-color: #F1CDB3;
+
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px 0;
+
+    height: 435px;
+    width: 270px;
+    background-color: #FAFAFA;
+    color: #545454;
+}
+
+.Card:hover{
+    background: #FFF;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    cursor: url(../files/cursore/ButtonHolder.svg), pointer;
+    transition: all 0.5s ease;
+}
+
+.Card:hover > button {
+    background: #FDDCC4;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+  }
+
+.Card p{
+    font-family: Georgia;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.PetsButtonContainer{
+    padding-bottom: 10px;
+}
+
+.CardButton{
+    height: 52px;
+    width: 187px;
+    color: #292929;
+    border-color: #F1CDB3;
+}
+/* #endregion */
+/* #region ================================= Help =================================*/
+
+.Help{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-size: 100%;
+    height: 611px;
+    width: 100%;
+    background-color: #FFF;
+}
+.HelpContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 431px;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.HelpContentHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 90px;
+    width: 310px;
+}
+
+.HelpContentHeading h3{
+    letter-spacing: 2.1px
+}
+
+
+.HelpGrid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px 117px;
+
+    height: 281px;
+    max-width: 1030px;
+}
+
+.HelpGridCells{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HelpGridCells img{
+    width: 60px;
+}
+/* #endregion */
+/* #region =============================== Donation ===============================*/
+
+.Donation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-size: 100%;
+    height: 462px;
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.DonationContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0 30px;
+
+    padding-top: 82px;
+    height: 282px;
+    width: 100%;
+}
+
+.DonationContentInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px 0;
+
+    height: 282px;
+    width: 380px;
+}
+
+.DonationContentHeading{
+    letter-spacing: 2.1px;
+    height: 90px;
+    width: 300px;
+}
+.ButtonDonation{
+    justify-content: center;
+    gap: 0 15px;
+    width: 349px;
+    height: 43px;
+    border-radius: 10px;
+    padding-inline: 0;
+    border-color: #F1CDB3;
+    background-color: #F1CDB3;
+}
+
+.ButtonDonation h4{
+    letter-spacing: 1.1px;
+}
+
+.DonationContentInformation p{
+    font-family: Arial;
+    font-style: italic;
+    line-height: 150%;
+
+
+    font-size: 12px;
+    color: #B2B2B2;
+}
+/* #endregion */
+/* #region ================================ Footer ================================*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-size: 100%;
+    height: 350px;
+    width: 100%;
+    background: url(../files/noise/noise_transparent@2x.png),
+     -webkit-linear-gradient(top left, #5b483a, #262425, #211F20);
+}
+
+.FooterContent{
+    height: 310px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.FooterContactsLocationContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 740px;
+    width: 100%;
+    height: 234px;
+}
+
+.FooterContent h3{
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.FooterContntConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 234px;
+    padding-top: 17px;
+}
+
+.Contacts{
+    width: 278px;
+}
+
+.Location{
+    width: 302px;
+}
+
+.FooterItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 32px;
+    gap: 0 20px;
+}
+
+.FooterText{
+    letter-spacing: 1.2px;
+    color: #F1CDB3;
+}
+/* #endregion */
+
+/* _______________________________________________________________________________*/
+/* _______________________________________________________________________________*/
+
+/* ================================= OUR PETS ===============================*/
+
+/* #region ========================== Header ==========================*/
+
+.HeaderOurPets{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+}
+
+.HeaderOurPetsTitle{
+    color: #545454;
+}
+
+.HeaderOurPets p{
+    color: #292929;
+}
+
+.MenuLinkOurPets{
+    color: #545454;
+    line-height: 160%;
+}
+
+.MenuLinkOurPetsActive{
+    pointer-events: none;
+    
+    color: #292929;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.MenuLinkOurPets:hover{
+    color: #292929;
+    transition: all 0.5s ease;
+}
+
+.OurPetsBurger > span{
+    background-color: #000;
+}
+
+/* #endregion */
+
+/* #region ========================== Main ==========================*/
+
+.MainOurPets{
+    height: 1342px;
+    background-color: #F6F6F6;
+}
+
+.OurPetsPetsContent{
+    width: 100%;
+    height: 1162px;
+}
+
+.CardsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 435px);
+    gap: 31px 10px;
+    width: 100%;
+    height: 930px;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    width: 340px;
+    height: 52px;
+}
+
+.SliderControl{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.Number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #F1CDB3;
+
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #292929;
+}
+/* #endregion */
+
+/* #region ========================== @media ==========================*/
+
+/* #region ================== @media_768px INDEX ==========================*/
+@media(max-width: 1279px){
+/* #region ================== @media_768px StartScreen ==========================*/    
+    .WidthContainer{
+        max-width: 92%;
+        align-items: center;
+    }
+    .StartScreen{
+        height: 1165px;
+    }
+    .NotOnly{
+        height: 1015px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Content{
+        align-items: center;
+        width: 66%;
+        height: 460px;
+    }
+    .NotOnlyTitle{
+        width: 367px;
+        align-self: flex-start;
+    }
+    .Content h2{
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .StartScreenPappy{
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+    .StartScreenPappy img{
+        width: 593px;
+    }
+/* #endregion */
+/* #region ================== @media_768px About ==========================*/
+    .About{
+        height: 1048px;
+    }
+    .AboutContainer{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 886px;
+    }
+    .AboutPetsPhoto{
+        order: 2;
+    }
+    .AboutContentContainer{
+        max-width: 61%;
+        order: 1;
+    }
+    .AboutContent{
+        align-items: flex-start;
+    }
+    .AboutTitle{
+        width: 400px;
+        align-self: center;
+    }
+/* #endregion */
+/* #region ================== @media_768px Pets ==========================*/
+    .Carousel{
+        width: 580px;
+    }
+    .Carousel > #Card3{
+        display: none;
+    }
+    .Slider{
+        width: 708px;
+    }
+/* #endregion */
+/* #region ================== @media_768px Help ==========================*/
+    .Help{
+        height: 779px;
+    }
+    .HelpContent{
+        height: 599px;
+    }
+    .HelpGrid{
+        height: 449px;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(3, 113px);
+        gap: 55px 60px;
+        width: 72.5%;
+    }
+/* #endregion */
+/* #region ================== @media_768px Donation ======================*/
+    .Donation{
+        height: 783px;
+    }
+    .DonationDog{
+        order: 2;
+    }
+    .DonationContentInformation{
+        order: 1;
+    }
+    .DonationContent{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 603px;
+    }
+/* #endregion */
+/* #region ================== @media_768px Footer ======================*/
+    .FooterConteiner{
+        height: 639px;
+    }
+    .FooterContent{
+        flex-direction: column;
+        align-items: center;
+        height: 609px;
+    }
+    .FooterContactsLocationContainer{
+        width: 91%;
+    }
+    .FooterContntConteiner{
+        padding-top: 0;
+    }
+    .FooterPappy{
+        display: flex;
+    }
+/* #endregion */
+}
+/* #endregion */
+
+/* #region ================== @media_768px OUR PETS ==========================*/
+@media(max-width: 1279px){
+    .MainOurPets{
+        height: 1733px;
+    }
+    .OurPetsPetsContent{
+        justify-content: flex-start;
+        height: 1577px;
+    }
+    .WidthContainer{
+        max-width: 92%;
+        align-items: center;
+    }
+    .CardsContainer{
+        grid-template-columns: repeat(2, 43%);
+        grid-template-rows: repeat(3, 435px);
+        height: 1365px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    #OPCard_7, #OPCard_8{
+        display: none;
+    }
+}
+/* #endregion */
+
+/* #region ================== @media_320px INDEX ==========================*/
+@media(max-width: 767px){
+/* #region ============== @media_320px Header ==========================*/
+    .WidthContainer{
+        max-width: 92%;
+        align-items: center;
+        width: 95%;
+    }
+    .HeaderConteiner{
+        width: 95%;
+        height: 58px;
+    }
+    .HeaderConteiner nav{
+        display: none;
+    }
+    .Burger{
+        display: flex;
+        flex-direction: column;
+    }
+/* #endregion */
+/* #region ============== @media_320px StartScreen ==========================*/
+    .StartScreen{
+        height: 823px;
+    }
+    .NotOnly{
+        height: 673px;
+    }
+    .NotOnlyTitle{
+        width: 200px;
+        align-self: center;
+    }
+    .NotOnlyTitle h2{
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    .StartScreenPappy img{
+        width: 258px;
+    }
+    .Content{
+        width: 100%;
+    }
+    .Content p{
+        text-align: center;
+        min-width: 300px;
+        max-width: calc(100% - 242px);
+    }
+/* #endregion */
+/* #region ============== @media_320px About ==========================*/
+    .About{
+        height: 974px;
+    }
+    .AboutContainer{
+        height: 890px;
+    }
+    .AboutContentContainer{
+        max-width: 92%;
+    }
+    .AboutTitle{
+        width: 270px;
+    }
+    .AboutTitle h3{
+        font-size: 25px;
+        text-align: center;
+        padding-right: 0;
+        letter-spacing: 1.5px;
+    }
+    .AboutContent{
+        height: 494px;
+    }
+    .AboutContent p{
+        text-align: justify;
+    }
+    .AboutPetsPhoto{
+        align-items: flex-end;
+    }
+    .AboutPetsPhoto img{
+        width: 260px;
+    }
+/* #endregion */
+/* #region ============== @media_320px Pets ==========================*/
+    .Pets{
+        height: 791px;
+    }
+    .PetsContent{
+        padding-top: 40px;
+        height: 712px;
+    }
+    .PetsContentHeading{
+        width: 100%;
+    }
+    .PetsContentHeading h3{
+        font-size: 25px;
+        letter-spacing: 1.6px;
+        text-align: center;
+    }
+    .Carousel{
+        width: 270px;
+        order: 1;
+    }
+    .Carousel > #Card2{
+        display: none;
+    }
+    .Slider{
+        width: 270px;
+        height: 507px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    .SliderControl{
+        order: 2;
+    }
+/* #endregion */
+/* #region ============== @media_320px Help ==========================*/
+    .Help{  
+    height: 745px;
+    }
+    .HelpContentHeading h3{
+        letter-spacing: 1.5px;
+    }
+    .HelpContent{
+       height: 661px;
+       padding-top: 42px;
+    }
+    .HelpGrid{
+       height: 555px;
+       display: grid;
+       grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 88px);
+        gap: 29px 13px;
+        width: 100%;
+    }
+    .HelpContentHeading h3{
+        font-size: 25px;
+    }
+
+    .HelpGridCells img{
+        width: 50px;
+    }
+
+    .HelpGridCells h4{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+/* #endregion */
+/* #region ============== @media_320px Donation ==========================*/
+    .Donation{
+        height: 542px;
+        justify-content: center;
+    }
+    .DonationContent{
+        padding-top: 0px;
+        height: 462px;
+    }
+    .DonationContentHeading{
+        width: 215px;
+        align-self: center;
+        height: 70px;
+    }
+    .DonationContentHeading h3{
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    .ButtonDonation{
+        width: 281px;
+        height: 43px;
+    }
+    .ButtonDonation h4{
+        font-size: 15px;
+    }
+    .DonationDog img{
+        width: 260px;
+    }
+    .DonationContentInformation{
+        align-items: center;
+        width: 280px;
+    }
+    .DonationContentInformation h5{
+        letter-spacing: 0px;
+    }
+    .DonationContentInformation p{
+        text-align: justify;
+    }
+    /* #endregion */
+/* #region ============== @media_320px Footer ==========================*/
+    .FooterConteiner{
+        height: 809px;
+    }
+    .FooterContent{
+        height: 780px;
+    }
+    .Contacts{
+        align-items: center;
+    }
+    .FooterContntConteiner{
+        height: 210px;
+    }
+    .FooterContntConteiner h3{
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    .FooterContactsLocationContainer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 470px;
+    }
+    .Location{
+        height: 222px;
+        align-items: normal;
+    }
+    .FooterPappy img{
+        width: 260px;
+    }
+    .FooterItem{
+        gap: 0 21px;
+    }
+/* #endregion */
+}
+/* #endregion */
+
+/* #region ============== @media_320px Our Pets ==========================*/
+@media(max-width: 767px){
+    .WidthContainer{
+        max-width: 92%;
+        align-items: center;
+    }
+    .HeaderOurPets > .WidthContainer{
+        width: 88%;
+    }
+    .MainOurPets{
+        height: 1650px;
+    }
+    .OurPetsPetsContent{
+        justify-content: flex-start;
+        height: 1577px;
+    }
+    .CardsContainer{
+        grid-template-columns: repeat(1, 50%);
+        grid-template-rows: repeat(3, 435px);
+        height: 1365px;
+        padding-top: 42px; /*42*/
+        padding-bottom: 42px;        
+    }
+    #OPCard_4, #OPCard_5, #OPCard_6, #OPCard_7, #OPCard_8{
+        display: none;
+    }
+    .Navigation{
+        width: 300px;
+    }
+}
+/* #endregion */
+/* #endregion */
