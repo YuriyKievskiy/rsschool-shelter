@@ -906,225 +906,261 @@ footer{
         display: none;
     }
 }
-@media(max-width: 767px){
-    .WidthContainer{
-        
-    }
-}
-/* #endregion */
 /* #endregion */
 
 /* #region ================== @media_320px INDEX ==========================*/
 @media(max-width: 767px){
-    /* #region ============== @media_320px Header ==========================*/
-        .WidthContainer{
-            max-width: 92%;
-            align-items: center;
-            width: 95%;
-        }
-        .HeaderConteiner{
-            width: 95%;
-            height: 58px;
-        }
-        .HeaderConteiner nav{
-            display: none;
-        }
-        .Burger{
-            display: flex;
-            flex-direction: column;
-        }
-    /* #endregion */
-    /* #region ============== @media_320px StartScreen ==========================*/
-        .StartScreen{
-            height: 823px;
-        }
-        .NotOnly{
-            height: 673px;
-        }
-        .NotOnlyTitle{
-            width: 200px;
-            align-self: center;
-        }
-        .NotOnlyTitle h2{
-            font-size: 25px;
-            letter-spacing: 1.5px;
-            text-align: center;
-        }
-        .StartScreenPappy img{
-            width: 258px;
-        }
-        .Content{
-            width: 100%;
-        }
-        .Content p{
-            text-align: center;
-        }
-    /* #endregion */
-    /* #region ============== @media_320px About ==========================*/
-        .About{
-            height: 974px;
-        }
-        .AboutContainer{
-            height: 890px;
-        }
-        .AboutContentContainer{
-            max-width: 92%;
-        }
-        .AboutTitle{
-            width: 270px;
-        }
-        .AboutTitle h3{
-            font-size: 25px;
-            text-align: center;
-            padding-right: 0;
-            letter-spacing: 1.5px;
-        }
-        .AboutContent{
-            height: 494px;
-        }
-        .AboutContent p{
-            text-align: justify;
-        }
-        .AboutPetsPhoto{
-            align-items: flex-end;
-        }
-        .AboutPetsPhoto img{
-            width: 260px;
-        }
-    /* #endregion */
-    /* #region ============== @media_320px Pets ==========================*/
-        .Pets{
-            height: 791px;
-        }
-        .PetsContent{
-            padding-top: 40px;
-            height: 707px;
-        }
-        .PetsContentHeading{
-            width: 100%;
-        }
-        .PetsContentHeading h3{
-            font-size: 25px;
-            letter-spacing: 1.6px;
-        }
-        .Carousel{
-            width: 270px;
-            order: 1;
-        }
-        .Carousel > #Card2{
-            display: none;
-        }
-        .Slider{
-            width: 270px;
-            height: 507px;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-content: space-between;
-        }
-        .SliderControl{
-            order: 2;
-        }
-    /* #endregion */
-    /* #region ============== @media_320px Help ==========================*/
-        .Help{  
-            height: 745px;
-        }
-        .HelpContentHeading h3{
-            letter-spacing: 1.5px;
-        }
-        .HelpContent{
-           height: 661px;
-           padding-top: 42px;
-        }
-        .HelpGrid{
-           height: 555px;
-           display: grid;
-           grid-template-columns: repeat(2, 50%);
-           grid-template-rows: repeat(5, 88px);
-           gap: 29px 13px;
-           width: 100%;
-        }
-        .HelpContentHeading h3{
-            font-size: 25px;
-        }
-    
-        .HelpGridCells img{
-            width: 50px;
-        }
-    
-        .HelpGridCells h4{
-            font-size: 15px;
-            letter-spacing: 1px;
-        }
-    /* #endregion */
-    /* #region ============== @media_320px Donation ==========================*/
-        .Donation{
-            height: 542px;
-            justify-content: center;
-        }
-        .DonationContent{
-            padding-top: 0px;
-            height: 462px;
-        }
-        .DonationContentHeading{
-            width: 215px;
-            align-self: center;
-            height: 70px;
-        }
-        .DonationContentHeading h3{
-            font-size: 25px;
-            text-align: center;
-            letter-spacing: 1.5px;
-        }
-        .ButtonDonation{
-            width: 281px;
-            height: 43px;
-        }
-        .ButtonDonation h4{
-            font-size: 15px;
-        }
-        .DonationDog img{
-            width: 260px;
-        }
-        .DonationContentInformation{
-            align-items: center;
-            width: 280px;
-        }
-        .DonationContentInformation h5{
-            letter-spacing: 0px;
-        }
+/* #region ============== @media_320px Header ==========================*/
+    .WidthContainer{
+        max-width: 92%;
+        align-items: center;
+        width: 95%;
+    }
+    .HeaderConteiner{
+        width: 95%;
+        height: 58px;
+    }
+    .HeaderConteiner nav{
+        display: none;
+    }
+    .Burger{
+        display: flex;
+        flex-direction: column;
+    }
+/* #endregion */
+/* #region ============== @media_320px StartScreen ==========================*/
+    .StartScreen{
+        height: 823px;
+    }
+    .NotOnly{
+        height: 673px;
+    }
+    .NotOnlyTitle{
+        width: 200px;
+        align-self: center;
+    }
+    .NotOnlyTitle h2{
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    .StartScreenPappy img{
+        width: 258px;
+    }
+    .Content{
+        width: 100%;
+    }
+    .Content p{
+        text-align: center;
+        min-width: 300px;
+        max-width: calc(100% - 242px);
+    }
+/* #endregion */
+/* #region ============== @media_320px About ==========================*/
+    .About{
+        height: 974px;
+    }
+    .AboutContainer{
+        height: 890px;
+    }
+    .AboutContentContainer{
+        max-width: 92%;
+    }
+    .AboutTitle{
+        width: 270px;
+    }
+    .AboutTitle h3{
+        font-size: 25px;
+        text-align: center;
+        padding-right: 0;
+        letter-spacing: 1.5px;
+    }
+    .AboutContent{
+        height: 494px;
+    }
+    .AboutContent p{
+        text-align: justify;
+    }
+    .AboutPetsPhoto{
+        align-items: flex-end;
+    }
+    .AboutPetsPhoto img{
+        width: 260px;
+    }
+/* #endregion */
+/* #region ============== @media_320px Pets ==========================*/
+    .Pets{
+        height: 791px;
+    }
+    .PetsContent{
+        padding-top: 40px;
+        height: 712px;
+    }
+    .PetsContentHeading{
+        width: 100%;
+    }
+    .PetsContentHeading h3{
+        font-size: 25px;
+        letter-spacing: 1.6px;
+        text-align: center;
+    }
+    .Carousel{
+        width: 270px;
+        order: 1;
+    }
+    .Carousel > #Card2{
+        display: none;
+    }
+    .Slider{
+        width: 270px;
+        height: 507px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    .SliderControl{
+        order: 2;
+    }
+/* #endregion */
+/* #region ============== @media_320px Help ==========================*/
+    .Help{  
+    height: 745px;
+    }
+    .HelpContentHeading h3{
+        letter-spacing: 1.5px;
+    }
+    .HelpContent{
+       height: 661px;
+       padding-top: 42px;
+    }
+    .HelpGrid{
+       height: 555px;
+       display: grid;
+       grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 88px);
+        gap: 29px 13px;
+        width: 100%;
+    }
+    .HelpContentHeading h3{
+        font-size: 25px;
+    }
 
-        .DonationContentInformation p{
-            text-align: justify;
-        }
-    /* #endregion */
-    /* #region ============== @media_320px Footer ==========================*/
-        .FooterConteiner{
-            height: 809px;
-        }
-        .FooterContent{
-            height: 780px;
-        }
-        .Contacts{
-            align-items: center;
-        }
-        .FooterContntConteiner h3{
-            font-size: 25px;
-            text-align: center;
-            letter-spacing: 1.5px;
-        }
-        .FooterContactsLocationContainer{
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 470px;
-        }
-        .FooterPappy img{
-            width: 260px;
-        }
-        .FooterItem{
-            gap: 0 10px;
-        }
-    /* #endregion */
+    .HelpGridCells img{
+        width: 50px;
+    }
+
+    .HelpGridCells h4{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+/* #endregion */
+/* #region ============== @media_320px Donation ==========================*/
+    .Donation{
+        height: 542px;
+        justify-content: center;
+    }
+    .DonationContent{
+        padding-top: 0px;
+        height: 462px;
+    }
+    .DonationContentHeading{
+        width: 215px;
+        align-self: center;
+        height: 70px;
+    }
+    .DonationContentHeading h3{
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    .ButtonDonation{
+        width: 281px;
+        height: 43px;
+    }
+    .ButtonDonation h4{
+        font-size: 15px;
+    }
+    .DonationDog img{
+        width: 260px;
+    }
+    .DonationContentInformation{
+        align-items: center;
+        width: 280px;
+    }
+    .DonationContentInformation h5{
+        letter-spacing: 0px;
+    }
+    .DonationContentInformation p{
+        text-align: justify;
     }
     /* #endregion */
+/* #region ============== @media_320px Footer ==========================*/
+    .FooterConteiner{
+        height: 809px;
+    }
+    .FooterContent{
+        height: 780px;
+    }
+    .Contacts{
+        align-items: center;
+    }
+    .FooterContntConteiner{
+        height: 210px;
+    }
+    .FooterContntConteiner h3{
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    .FooterContactsLocationContainer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 470px;
+    }
+    .Location{
+        height: 222px;
+        align-items: normal;
+    }
+    .FooterPappy img{
+        width: 260px;
+    }
+    .FooterItem{
+        gap: 0 21px;
+    }
+/* #endregion */
+}
+/* #endregion */
+
+/* #region ============== @media_320px Our Pets ==========================*/
+@media(max-width: 767px){
+    .WidthContainer{
+        max-width: 92%;
+        align-items: center;
+    }
+    .HeaderOurPets > .WidthContainer{
+        width: 88%;
+    }
+    .MainOurPets{
+        height: 1650px;
+    }
+    .OurPetsPetsContent{
+        justify-content: flex-start;
+        height: 1577px;
+    }
+    .CardsContainer{
+        grid-template-columns: repeat(1, 50%);
+        grid-template-rows: repeat(3, 435px);
+        height: 1365px;
+        padding-top: 42px; /*42*/
+        padding-bottom: 42px;        
+    }
+    #OPCard_4, #OPCard_5, #OPCard_6, #OPCard_7, #OPCard_8{
+        display: none;
+    }
+    .Navigation{
+        width: 300px;
+    }
+}
+/* #endregion */
+/* #endregion */
