@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Shelter</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./files/paw.png">
 </head>
 <body>
     <main>
-        
         <div class="StartScreen" id="Main">
-            <header id="HeaderMain">
+            <header class="WidthContainer" id="HeaderMain">
                 <div class="HeaderConteiner">
                     <a href="#!" class="Logo">
                         <h1>Cozy House</h1>
-                        <span>Shelter for pets in Boston</span>
+                        <p>Shelter for pets in Boston</p>
                     </a>
                     <nav>
                         <ul>
@@ -25,11 +24,18 @@
                             <li><a href="#Footer" class="MenuLink">Contacts</a></li>
                         </ul>
                     </nav>
+                    <div class="Burger">
+                        <span class="Line One"></span>
+                        <span class="Line Two"></span>
+                        <span class="Line Three"></span>
+                    </div>
                 </div>
             </header>
-            <div class="NotOnly">
+            <div class="WidthContainer NotOnly">
                 <section class="Content">
-                    <h2>Not only people need a house</h2>
+                    <div class="NotOnlyTitle">
+                        <h2>Not only people need a house</h2>
+                    </div>
                     <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
                     <a href="#Pets" class="Button ButtonPrimary">Make a friend</a>
                 </section>
@@ -39,14 +45,16 @@
             </div>
         </div>
 
-        <div class="About">
+        <div class="WidthContainer About">
             <div class="AboutContainer">
                 <div class="AboutPetsPhoto">
                     <img src="./files/Main/about-pets.png" alt="AboutPets photo">
                 </div>
                 <div class="AboutContentContainer">
                     <section class="AboutContent">
-                        <h3>About the shelter “Cozy House”</h3>
+                        <div class="AboutTitle">
+                            <h3>About the shelter “Cozy House”</h3>
+                        </div>
                         <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
                         <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
                     </section>
@@ -55,28 +63,27 @@
         </div>
 
         <div class="Pets" id="Pets">
-            <div class="PetsContent">
+            <div class="WidthContainer PetsContent">
                 <section class="PetsContentHeading">
-                    <h3>Our friends who</h3>
-                    <h3>are looking for a house</h3>
+                    <h3>Our friends who<br>are looking for a house</h3>
                 </section>
                 <div class="Slider">
-                    <button class="Button SliderControl" id="Prew"><b>&#8592;</b></button>
+                    <button class="Button SliderControl" id="Prew">&#8592;</button>
                     <div class="Carousel">
 
-                        <div class="Card">
+                        <div class="Card" id="Card1" >
                             <div><img src="./files/Main/Carousel/pets-katrine.png" alt="pets"></div>
                             <p>Katrine</p>
                             <button class="Button CardButton">Learn more</button>
                         </div>
 
-                        <div class="Card">
+                        <div class="Card" id="Card2">
                             <div><img src="./files/Main/Carousel/pets-jennifer.png" alt="pets"></div>
                             <p>Jennifer</p>
                             <button class="Button CardButton">Learn more</button>
                         </div>
                         
-                        <div class="Card">
+                        <div class="Card" id="Card3">
                             <div><img src="./files/Main/Carousel/pets-woody.png" alt="pets"></div>
                             <p>Woody</p>
                             <button class="Button CardButton">Learn more</button>
@@ -90,54 +97,54 @@
         </div>
 
         <div class="Help" id="Help">
-            <div class="HelpContent">
+            <div class="WidthContainer HelpContent">
                 <Section class="HelpContentHeading">
                     <h3>How you can help</h3>
                     <h3>our shelter</h3>
                 </Section>
                 <div class="HelpGrid">
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/petfood.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/petfood.png" alt="icon">
                         <h4>Pet food</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/transportation.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/transportation.png" alt="icon">
                         <h4>Transportation</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/toys.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/toys.png" alt="icon">
                         <h4>Toys</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/bowls-and-cups.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/bowls-and-cups.png" alt="icon">
                         <h4>Bowls and cups</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/shampoos.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/shampoos.png" alt="icon">
                         <h4>Shampoos</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/vitamins.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/vitamins.png" alt="icon">
                         <h4>Vitamins</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/medicines.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/medicines.png" alt="icon">
                         <h4>Medicines</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/collars-or-leashes.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/collars-or-leashes.png" alt="icon">
                         <h4>Collars / leashes</h4>
                     </section>
 
                     <section class="HelpGridCells">
-                        <img src="./files/Main/HelpGrid/sleeping-area.svg" alt="icon">
+                        <img src="./files/Main/HelpGrid/sleeping-area.png" alt="icon">
                         <h4>Sleeping areas</h4>
                     </section>
                 </div>
@@ -145,7 +152,7 @@
         </div>
 
         <div class="Donation">
-            <div class="DonationContent">
+            <div class="WidthContainer DonationContent">
                 <div class="DonationDog">
                     <img src="./files/Main/donation-dog.png" alt="Dog">
                 </div>
@@ -162,30 +169,32 @@
     </main>
     <footer>
         <div class="FooterConteiner" id="Footer">
-            <div class="FooterContent">
-                <div class="FooterContntConteiner Contacts">
-                    <h3>For questions and suggestions</h3>
-                    <section class="FooterItem">
-                        <a href="mailto:email@shelter.com"><img src="./files/Footer/mail.svg" alt="email"></a>
-                        <a href="mailto:email@shelter.com"><h4 class="FooterText">email@shelter.com</h4></a>
-                    </section>
-                    <section class="FooterItem">
-                        <a href="tel:+136745677554"><img src="./files/Footer/phone.svg" alt="phone"></a>
-                        <a href="tel:+136745677554"><h4 class="FooterText">+13 674 567 75 54</h4></a>
-                    </section>
-                </div>
-                
-                <div class="FooterContntConteiner Location">
-                    <h3>We are waiting for your visit</h3>
-                    <section class="FooterItem">
-                        <a href="https://maps.app.goo.gl/S2owouiafTdYY6ex5" target="_blank"><img src="./files/Footer/pin.svg" alt="pin"></a>
-                        <a href="https://maps.app.goo.gl/S2owouiafTdYY6ex5" target="_blank"><h4 class="FooterText">1 Central  Street, Boston (entrance from the store)</h4></a>
-                        
-                    </section>
-                    <section class="FooterItem">
-                        <a href="https://maps.app.goo.gl/23qCGkHb1wrKibjc8" target="_blank"><img src="./files/Footer/pin.svg" alt="pin"></a>
-                        <a href="https://maps.app.goo.gl/23qCGkHb1wrKibjc8" target="_blank"><h4 class="FooterText">18 South   Park, London </h4></a>
-                    </section>
+            <div class="WidthContainer FooterContent">
+                <div class="FooterContactsLocationContainer">
+                    <div class="FooterContntConteiner Contacts">
+                        <h3>For questions and suggestions</h3>
+                        <section class="FooterItem">
+                            <a href="mailto:email@shelter.com"><img src="./files/Footer/mail.svg" alt="email"></a>
+                            <a href="mailto:email@shelter.com"><h4 class="FooterText">email@shelter.com</h4></a>
+                        </section>
+                        <section class="FooterItem">
+                            <a href="tel:+136745677554"><img src="./files/Footer/phone.svg" alt="phone"></a>
+                            <a href="tel:+136745677554"><h4 class="FooterText">+13 674 567 75 54</h4></a>
+                        </section>
+                    </div>
+                    
+                    <div class="FooterContntConteiner Location">
+                        <h3>We are waiting for <br> your visit</h3>
+                        <section class="FooterItem">
+                            <a href="https://maps.app.goo.gl/S2owouiafTdYY6ex5" target="_blank"><img src="./files/Footer/pin.svg" alt="pin"></a>
+                            <a href="https://maps.app.goo.gl/S2owouiafTdYY6ex5" target="_blank"><h4 class="FooterText">1 Central  Street, Boston (entrance from the store)</h4></a>
+                            
+                        </section>
+                        <section class="FooterItem">
+                            <a href="https://maps.app.goo.gl/23qCGkHb1wrKibjc8" target="_blank"><img src="./files/Footer/pin.svg" alt="pin"></a>
+                            <a href="https://maps.app.goo.gl/23qCGkHb1wrKibjc8" target="_blank"><h4 class="FooterText">18 South   Park, London </h4></a>
+                        </section>
+                    </div>
                 </div>
                 <div class="FooterPappy">
                     <img src="./files/Footer/footer-puppy.png" alt="puppy">
